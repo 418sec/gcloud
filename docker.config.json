@@ -1,0 +1,18 @@
+{
+  "auths": {
+    "https://index.docker.io/v1/": {
+      "auth": "YWxleGloYWRqaWxhbWJyaXM6NzFjYTRlZWMtZjhjMS00MjcxLWIzNjktYTc0ODQ1NTdjZmMx"
+    }
+  },
+  "HttpHeaders": {
+    "User-Agent": "Docker-Client/19.03.12 (linux)"
+  },
+  "credHelpers": {
+    "gcr.io": "gcloud",
+    "us.gcr.io": "gcloud",
+    "eu.gcr.io": "gcloud",
+    "asia.gcr.io": "gcloud",
+    "staging-k8s.gcr.io": "gcloud",
+    "marketplace.gcr.io": "gcloud"
+  }
+}

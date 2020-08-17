@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress
+  annotations:
+    cloud.google.com/app-protocols: '{"my-https-port":"HTTPS","my-http-port":"HTTP"}'
+    kubernetes.io/ingress.global-static-ip-name: address1
+    networking.gke.io/managed-certificates: certificate-lobster-palace
+    kubernetes.io/ingress.allow-http: "false"  
+    ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  backend:
+    serviceName: node-port-service
+    servicePort: 443

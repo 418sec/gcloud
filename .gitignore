@@ -1,0 +1,4 @@
+*secret*
+*.pem
+*key*
+ignore/*
